@@ -24,7 +24,7 @@ const __dirname = path.dirname(__filename);
 app.use(
     cors({
         origin: (origin, callback) => {
-            const allowedOrigins = ['https://zwiggy-frontend-xmsy.onrender.com', https://zwiggy-admin-fvo9.onrender.com/'];
+            const allowedOrigins = ['https://zwiggy-frontend-xmsy.onrender.com', https://zwiggy-admin-fvo9.onrender.com'];
             if (!origin || allowedOrigins.includes(origin)) {
                 callback(null, true);
             } else {
