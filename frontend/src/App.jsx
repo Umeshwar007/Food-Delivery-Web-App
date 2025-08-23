@@ -8,12 +8,15 @@ import CheckoutPage from './pages/Checkout/Checkout';
 import AboutPage from './pages/AboutPage/AboutPage';
 import Menu from './pages/Menu/Menu';
 import PrivateRoute from './components/PrivateRoute/PrivateRoute';
-
+import ScrollToTop from './scroll';
 import MyOrders from './pages/MyOredrs/MyOrders';
 import VerifyPaymentPage from './pages/VerifyPaymentPage/VerifyPaymentPage';
 
 function App() {
+
   return (
+    <>
+    <ScrollToTop/>
     <Routes>
       {/* Public */}
       <Route path="/" element={<Home />} />
@@ -42,6 +45,7 @@ function App() {
         element={<PrivateRoute><MyOrders /></PrivateRoute>}
       />
     </Routes>
+    </>
   );
 }
 

@@ -7,9 +7,7 @@ import OurMenuHome from '../../components/OurMenuHome/OurMenuHome'
 import Footer from '../../components/Footer/Footer'
 
 const Home = () => {
-    useEffect(()=>{
-            Window.scrollTo(0,0);
-        },[]);
+   
     return (
         <>
             <Navbar />
